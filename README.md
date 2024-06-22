@@ -6,7 +6,9 @@ The game works, playing it on some online emulator is easiest: https://ajor.co.u
 For input, the grid
 
 1 2 3
+
 4 5 6
+
 7 8 9
 
 corresponds to the squares, and pressing 0 will reset the game. It also keeps score which is kinda stupid gameplay wise for a game like tictactoe but it was an additional thing to code so I added it.
