@@ -1,0 +1,41 @@
+functions: reset game and clear/draw grid
+
+main game loop is just: wait for key 1-9 representing squares, update game state, check if win
+
+somewhere should indicate the current moving player
+also some indicator for win?
+maybe just keeping a total score would be fine, and incrementing that at a win (we can use the decimal conversion thingy!!!)
+
+
+use zero padding to make the code look nicer maybe
+
+sprites:
+X, O, single square, 7x1 vertical, 1x7 horizontal
+
+parts of the code:
+draw grid
+draw X and O at bottom or right for score
+check if game is won
+reset board by looking at game state and drawing the necessary X's and O's again
+
+functions:
+draw X score
+draw O score
+draw thing (X or O, whatever's at I) at the given grid square (0-8)
+
+8C - switch curr. moving indicators
+A8 - draw move on grid
+
+registers:
+0 - current moving player (1 or 2 -> X or O)
+1 - x coord of top left corner of grid
+2 - y coord of top left corner of grid
+3 - x coord of top left corner of X score
+4 - y coord of top left corner of X score
+5 - x coord of top left corner of O score
+6 - y coord of top left corner of O score
+7 - X score
+8 - Y score
+9 - who won (0, 1, 2)
+A - key input
+B-E - gen.purpose registers
